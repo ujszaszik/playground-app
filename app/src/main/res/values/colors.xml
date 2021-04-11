@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorAccent">#00E676</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+
+    <color name="background">#ECEFF1</color>
+
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="card_background">@color/white</color>
+    <color name="card_caption_background">#80000000</color>
+    <color name="card_caption_text_color">@color/white</color>
+    <color name="card_name_text_color">@color/black</color>
+
+    <color name="imprint_appname">@color/colorPrimaryDark</color>
+    <color name="imprint_version">@color/black</color>
+    <color name="imprint_company">@color/colorPrimaryDark</color>
+    <color name="imprint_website">@color/black</color>
+    <color name="imprint_email">@color/black</color>
+    <color name="imprint_feedback">@color/black</color>
+    <color name="imprint_support">@color/black</color>
+
+    <color name="grey">#939598</color>
+    <color name="grey_share">#DCDCDC</color>
+
+    <color name="error_background">#555555</color>
+    <color name="error_separator">@color/white</color>
+    <color name="error_hint">@color/white</color> <!-- LIGHT -->
+    <color name="error_number">@color/white</color> <!-- BOLD -->
+    <color name="error_title">@color/white</color> <!-- BOLD -->
+    <color name="error_text">@color/white</color>
+
+</resources>

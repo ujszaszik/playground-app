@@ -1,0 +1,105 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <item name="android:colorButtonNormal">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+
+        <item name="android:windowActionBar">false</item>
+
+        <item name="android:datePickerDialogTheme">@style/DialogTheme</item>
+
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:datePickerStyle">@style/DatePicker</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="DatePicker" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/colorPrimary</item>
+        <item name="android:dayOfWeekBackground">@color/colorPrimary</item>
+        <item name="android:yearListSelectorColor">@color/colorAccent</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ActionLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">@dimen/layout_action_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/layout_action_vertical_padding</item>
+        <item name="android:paddingEnd">@dimen/layout_action_horizontal_padding</item>
+        <item name="android:paddingBottom">@dimen/layout_action_vertical_padding</item>
+    </style>
+
+    <style name="DetailsInfoTitleText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">@integer/default_weight</item>
+        <item name="android:textSize">@dimen/property_list_key_tex_size</item>
+    </style>
+
+    <style name="DetailsHighlightText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/details_margin_default</item>
+        <item name="android:layout_marginTop">@dimen/details_margin_default</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/details_info_highlight_size</item>
+    </style>
+
+    <style name="DetailsCheckbox">
+        <item name="buttonTint">@color/selector_checkbox</item>
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">@integer/default_weight</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="DetailsPropertyRowLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/details_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/details_margin_default</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RoundButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:layout_width">@dimen/round_button_size</item>
+        <item name="android:layout_height">@dimen/round_button_size</item>
+        <item name="android:insetLeft">@dimen/zero</item>
+        <item name="android:insetTop">@dimen/zero</item>
+        <item name="android:insetRight">@dimen/zero</item>
+        <item name="android:insetBottom">@dimen/zero</item>
+        <item name="android:padding">@dimen/zero</item>
+        <item name="iconPadding">@dimen/zero</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconSize">@dimen/round_button_icon_size</item>
+    </style>
+
+</resources>

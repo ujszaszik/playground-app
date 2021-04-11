@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="uiModel"
+            type="hu.bitnet.smallapp.ui.details.DetailsUIModel" />
+
+        <variable
+            name="intent"
+            type="hu.bitnet.smallapp.ui.details.DetailsIntent" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/detailsCoordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.didik.component.StickyNestedScrollView
+            android:id="@+id/detailsScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.details.DetailsActivity">
+
+                <ImageView
+                    android:id="@+id/playgroundDetailImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/match_constraint"
+                    android:scaleType="fitXY"
+                    app:imageAssetName="@{uiModel.currentPlayground.photo}"
+                    app:layout_constraintBottom_toTopOf="@+id/detailsImageGuideline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:onSuccess="@{uiModel.imageTransition}" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/detailsImageGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="@dimen/details_horizontal_guideline" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/detailsIconGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="@dimen/details_vertical_guideline" />
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/details_margin_default"
+                    android:layout_marginTop="@dimen/details_margin_default"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_arrow_back_white" />
+
+                <hu.bitnet.smallapp.ui.details.view.summary.PlaygroundSummaryView
+                    android:id="@+id/playgroundSummaryView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:tag="sticky"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/playgroundDetailImage"
+                    app:playgroundDistance="@{uiModel.distance}"
+                    app:summaryPlayground="@{uiModel.currentPlayground}" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/carButton"
+                    style="@style/RoundButtonStyle"
+                    android:onClick="@{() -> intent.startNavigation(uiModel.currentPlayground)}"
+                    app:icon="@drawable/ic_car_white"
+                    app:layout_constraintBottom_toBottomOf="@id/detailsImageGuideline"
+                    app:layout_constraintEnd_toEndOf="@id/detailsIconGuideline"
+                    app:layout_constraintStart_toStartOf="@id/detailsIconGuideline"
+                    app:layout_constraintTop_toTopOf="@id/detailsImageGuideline"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle" />
+
+                <hu.bitnet.smallapp.ui.details.view.simpleaction.SimpleActionView
+                    android:id="@+id/shareActionView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_margin_default"
+                    app:actionBgColor="@color/grey_share"
+                    app:actionIcon="@drawable/ic_share_arrow_back"
+                    app:actionText="@string/details_share_label"
+                    app:doOnClick="@{() -> intent.shareCurrent(uiModel.currentPlayground)}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/playgroundSummaryView" />
+
+                <hu.bitnet.smallapp.ui.details.view.description.PlaygroundDescriptionView
+                    android:id="@+id/playgroundDescriptionView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:descriptionPlayground="@{uiModel.currentPlayground}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/shareActionView" />
+
+                <hu.bitnet.smallapp.ui.details.view.data.PlaygroundDataView
+                    android:id="@+id/playgroundDataView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/playgroundDescriptionView"
+                    app:playgroundProperties="@{uiModel.currentPlayground.properties}" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </me.didik.component.StickyNestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

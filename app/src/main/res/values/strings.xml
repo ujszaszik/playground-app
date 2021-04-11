@@ -1,0 +1,63 @@
+<resources>
+
+    <string name="app_name">SmallApp</string>
+
+    <string name="settings_settings">Beállítások</string>
+    <string name="metric_km">km</string>
+    <string name="metric_m">m</string>
+    <string name="short_distance_text">Távolság:</string>
+
+    <string name="dialog_title_question">Kérdés</string>
+    <string name="dialog_title_info">Információ</string>
+    <string name="dialog_title_error">Hiba</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Mégsem</string>
+    <string name="dialog_yes">Igen</string>
+    <string name="dialog_no">Nem</string>
+
+    <string name="request_permission">Engedélyezd a hozzáférést</string>
+    <string name="request_location_permission">Engedélyezd a helymeghatározást</string>
+
+    <string name="toast_permission_denied_title">A helymeghatározás meg lett tagadva</string>
+
+    <string name="map_title">Térkép</string>
+
+    <string name="articles_title">Cikkek</string>
+
+    <string name="error_airplane_enabled">Az optimális működéshez ki kell kapcsolnod a Repülőgép Üzemmódot!</string>
+    <string name="error_gps_disabled">Az optimális működéshez engedélyezned kell a GPS használatát!</string>
+
+    <string name="playground_title">Játszóterek</string>
+    <string name="indoor_playgrounds_title">Játszóházak</string>
+    <string name="adventure_parks_title">Kalandparkok</string>
+
+    <string name="property_carpet_title">Burkolat:</string>
+    <string name="property_shadowy_title">Árnyékos:</string>
+    <string name="property_rainproof_title">Esővédett:</string>
+    <string name="property_fence_title">Körbekerített:</string>
+    <string name="property_free_parking_title">Ingyenes parkolás:</string>
+    <string name="property_bench_title">Pad:</string>
+    <string name="property_dust_bin_title">Szemeteskosár:</string>
+    <string name="property_covered_title">Talaj:</string>
+    <string name="property_roofed_title">Fedett:</string>
+    <string name="property_tickets_title">Jegyárak:</string>
+    <string name="property_age_title">Korhatár:</string>
+
+    <string name="property_not_found">Nem ismert</string>
+
+    <string name="details_data_label">Adatok:</string>
+    <string name="details_description_label">Leírás:</string>
+    <string name="details_share_label">Megosztás</string>
+    <string name="details_transition_image_key">detailsTransitionImage</string>
+    <string name="details_transition_text_key">detailsTransitionText</string>
+    <string name="details_id_key">detailsId</string>
+
+    <string name="share_app_description" formatted="false">Itt a jó idő, gyere el velünk a kedvenc játszóterünkre: %s, %s</string>
+
+    <string name="error_details_dialog_title">Hiba történt</string>
+    <string name="error_details_dialog_ok">Rendben</string>
+    <string name="error_details_dialog_not_found_message">A kiválaszott játszótér nem szerepel az adatbázisban!</string>
+    <string name="error_details_dialog_unexpected_error_message">A játszótér betöltése során nem várt hiba keletkezett!</string>
+
+</resources>

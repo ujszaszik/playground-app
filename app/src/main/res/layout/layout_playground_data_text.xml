@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="property"
+            type="hu.bitnet.smallapp.entity.HeaderedProperty" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/DetailsPropertyRowLayout">
+
+        <TextView
+            android:id="@+id/playgroundDataTextKeyTextView"
+            style="@style/DetailsInfoTitleText"
+            android:text="@{property.title}"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/playgroundDataTextValueTextView"
+            style="@style/DetailsInfoTitleText"
+            android:paddingStart="@dimen/details_data_text_padding"
+            android:paddingEnd="@dimen/details_data_text_padding"
+            android:text="@{property.value}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/details_info_text_size" />
+
+    </LinearLayout>
+</layout>

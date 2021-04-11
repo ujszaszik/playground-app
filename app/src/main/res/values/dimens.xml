@@ -1,0 +1,59 @@
+<resources>
+
+    <dimen name="zero">0dp</dimen>
+    <dimen name="match_constraint">0dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="use_constraint">0dp</dimen>
+
+    <dimen name="dialog_width">240dp</dimen>
+
+    <dimen name="card_image_height">200dp</dimen>
+    <dimen name="card_caption_padding">12dp</dimen>
+    <dimen name="card_caption_text_size">12sp</dimen>
+    <dimen name="card_name_padding">12dp</dimen>
+    <dimen name="card_name_text_size">18sp</dimen>
+
+    <dimen name="details_data_text_padding">6dp</dimen>
+    <dimen name="details_description_text_size">16sp</dimen>
+    <dimen name="details_info_highlight_size">22sp</dimen>
+    <dimen name="details_info_text_size">18sp</dimen>
+    <dimen name="details_main_tile_text_size">24sp</dimen>
+    <dimen name="details_margin_default">16dp</dimen>
+
+    <dimen name="imprint_appname">24sp</dimen>
+    <dimen name="imprint_version">14sp</dimen>
+    <dimen name="imprint_company">32sp</dimen>
+    <dimen name="imprint_website">16sp</dimen>
+    <dimen name="imprint_email">14sp</dimen>
+    <dimen name="imprint_feedback">14sp</dimen>
+    <dimen name="imprint_support">14sp</dimen>
+    <dimen name="imprint_padding_normal">15dp</dimen>
+    <dimen name="imprint_padding_small">7.5dp</dimen>
+
+    <dimen name="error_margin">40dp</dimen>
+    <dimen name="error_separator_width">48dp</dimen>
+    <dimen name="error_separator_height">1dp</dimen>
+    <dimen name="error_email">14sp</dimen>
+    <dimen name="error_number">30sp</dimen>
+    <dimen name="error_title">18sp</dimen>
+    <dimen name="error_text">12sp</dimen>
+
+    <dimen name="map_padding_bottom">128dp</dimen>
+
+    <dimen name="property_list_key_tex_size">18sp</dimen>
+
+    <dimen name="round_button_size">64dp</dimen>
+    <dimen name="round_button_icon_size">36dp</dimen>
+
+    <dimen name="layout_action_horizontal_padding">32dp</dimen>
+    <dimen name="layout_action_vertical_padding">16dp</dimen>
+
+    <dimen name="action_icon_size">72dp</dimen>
+    <dimen name="action_text_size">14sp</dimen>
+
+</resources>

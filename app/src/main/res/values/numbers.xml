@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_weight">1</integer>
+    <integer name="details_address_max_lines">2</integer>
+
+    <item name="details_horizontal_guideline" format="float" type="dimen">0.25</item>
+    <item name="details_vertical_guideline" format="float" type="dimen">0.8</item>
+
+    <item name="minimum_alpha_when_button_is_enabled" format="float" type="dimen">0.9</item>
+</resources>

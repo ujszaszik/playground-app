@@ -1,0 +1,66 @@
+apply from: 'versions.gradle'
+
+ext {
+
+    androidLibs = [
+            appCompat       : "androidx.appcompat:appcompat:$version_app_compat",
+            constraintLayout: "androidx.constraintlayout:constraintlayout:$version_constraint_layout",
+            core            : "androidx.core:core-ktx:$version_core",
+            fragment        : "androidx.fragment:fragment-ktx:$version_fragment",
+            material        : "com.google.android.material:material:$version_material",
+            recyclerView    : "androidx.recyclerview:recyclerview:$version_recycler_view"
+    ]
+
+    kotlinLibs = [
+            kotlin: "org.jetbrains.kotlin:kotlin-stdlib:$version_kotlin"
+    ]
+
+    lifecycleLibs = [
+            extensions: "androidx.lifecycle:lifecycle-extensions:$version_lifecycle",
+            viewModel : "androidx.lifecycle:lifecycle-viewmodel-ktx:$version_lifecycle_ktx",
+            liveData  : "androidx.lifecycle:lifecycle-livedata-ktx:$version_lifecycle_ktx",
+            common    : "androidx.lifecycle:lifecycle-common-java8:$version_lifecycle_ktx",
+            reactive  : "androidx.lifecycle:lifecycle-reactivestreams-ktx:$version_lifecycle_ktx"
+
+    ]
+
+    navigationLibs = [
+            fragment: "androidx.navigation:navigation-fragment-ktx:$version_navigation",
+            ui      : "androidx.navigation:navigation-ui-ktx:$version_navigation"
+    ]
+
+    daggerLibs = [
+            dagger       : "com.google.dagger:dagger:$version_dagger",
+            daggerSupport: "com.google.dagger:dagger-android-support:$version_dagger"
+    ]
+
+    daggerKaptLibs = [
+            compiler : "com.google.dagger:dagger-compiler:$version_dagger",
+            processor: "com.google.dagger:dagger-android-processor:$version_dagger"
+    ]
+
+    googleLibs = [
+            gson    : "com.google.code.gson:gson:$version_gson",
+            location: "com.google.android.gms:play-services-location:$version_gms_location"
+    ]
+
+    rxLibs = [
+            rxAndroid    : "io.reactivex.rxjava2:rxandroid:$version_rx_android",
+            rxKotlin     : "io.reactivex.rxjava2:rxkotlin:$version_rx_kotlin",
+            rxLocation   : "com.patloew.rxlocation:rxlocation:$version_rx_location",
+            rxPermissions: "com.github.tbruyelle:rxpermissions:$version_rx_permissions"
+    ]
+
+    securityLibs = [
+            crypto: "androidx.security:security-crypto:$version_security"
+    ]
+
+    glideLibs = [
+            glide: "com.github.bumptech.glide:glide:$version_glide"
+    ]
+
+    uiLibs = [
+            nestedScrollView: "com.github.didikk:sticky-nestedscrollview:$version_nested_scroll_view"
+    ]
+
+}

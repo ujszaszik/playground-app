@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="entity"
+            type="hu.bitnet.smallapp.entity.PlaygroundEntity" />
+
+        <variable
+            name="distance"
+            type="Double" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/playgroundNameTextView"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/details_margin_default"
+            android:layout_marginTop="@dimen/details_margin_default"
+            android:text="@{entity.name}"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/details_main_tile_text_size"
+            app:layout_constraintEnd_toStartOf="@+id/playgroundDescriptionTextGuideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/playgroundDescriptionTextGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@dimen/details_vertical_guideline" />
+
+        <TextView
+            android:id="@+id/playgroundAddressTextView"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/details_margin_default"
+            android:maxLines="@integer/details_address_max_lines"
+            android:text="@{entity.address}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/details_info_text_size"
+            app:layout_constraintEnd_toStartOf="@+id/playgroundDescriptionTextGuideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playgroundNameTextView" />
+
+        <TextView
+            android:id="@+id/distanceTextView"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/details_margin_default"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            app:distanceText="@{distance}"
+            app:layout_constraintBaseline_toBaselineOf="@+id/playgroundAddressTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/playgroundDescriptionTextGuideline" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

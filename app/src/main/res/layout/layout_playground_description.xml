@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="entity"
+            type="hu.bitnet.smallapp.entity.PlaygroundEntity" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/playgroundDescriptionTitleTextView"
+            style="@style/DetailsHighlightText"
+            android:text="@string/details_description_label" />
+
+        <TextView
+            android:id="@+id/playgroundDescriptionDetailsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/details_margin_default"
+            android:layout_marginTop="@dimen/details_margin_default"
+            android:layout_marginEnd="@dimen/details_margin_default"
+            android:text="@{entity.description}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/details_description_text_size" />
+
+    </LinearLayout>
+</layout>
